@@ -42,6 +42,8 @@ public class SmallvilleIntegration : MonoBehaviour
     private Coroutine activityMonitorCoroutine;
     private bool isMonitoringEnabled = true; 
     private string currentCommand;
+    private static readonly Regex twitchPodiumRegex = new Regex(@"Twitch\s*Chat\s*Podium", RegexOptions.IgnoreCase);
+
 
     void Start()
 {
@@ -169,13 +171,13 @@ private IEnumerator ProcessCommands()
             yield return new WaitForSeconds(scriptedCommandDelay);
 
         
-            if (command.Contains("move to **Twitch Podium**"))
-                {
-                    isAtTwitchPodium = true;
-                    Debug.Log("NPC has reached Twitch Podium. Starting Twitch chat fetching...");
-                    StartTwitchChatFetching();
-                    StartProcessingTwitchMessages();
-                    yield return StartCoroutine(StartPodiumTimer());
+         if (twitchPodiumRegex.IsMatch(command))
+            {
+                isAtTwitchPodium = true;
+                Debug.Log("NPC has reached TwitchChat Podium. Starting Twitch chat fetching...");
+                StartTwitchChatFetching();
+                StartProcessingTwitchMessages();
+                yield return StartCoroutine(StartPodiumTimer());
             }
         }
     }
