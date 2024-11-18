@@ -1,0 +1,103 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {
+      "Unity.RenderPipelines.Universal.Config.Runtime/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Unity.RenderPipelines.Universal.Config.Runtime.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.RenderPipelines.Universal.Config.Runtime.dll": {}
+        }
+      },
+      "Unity.VSAttribution.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Unity.VSAttribution.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.VSAttribution.Editor.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Unity.RenderPipelines.Universal.Config.Runtime/1.0.0": {
+      "type": "project",
+      "path": "Unity.RenderPipelines.Universal.Config.Runtime.csproj",
+      "msbuildProject": "Unity.RenderPipelines.Universal.Config.Runtime.csproj"
+    },
+    "Unity.VSAttribution.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.VSAttribution.Editor.csproj",
+      "msbuildProject": "Unity.VSAttribution.Editor.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": [
+      "Unity.RenderPipelines.Universal.Config.Runtime >= 1.0.0",
+      "Unity.VSAttribution.Editor >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\lucsb\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\lucsb\\Downloads\\Unity Support For TruSim\\Assembly-CSharp.csproj",
+      "projectName": "Assembly-CSharp",
+      "projectPath": "C:\\Users\\lucsb\\Downloads\\Unity Support For TruSim\\Assembly-CSharp.csproj",
+      "packagesPath": "C:\\Users\\lucsb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lucsb\\Downloads\\Unity Support For TruSim\\Temp\\obj\\Debug\\Assembly-CSharp\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\lucsb\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "projectReferences": {
+            "C:\\Users\\lucsb\\Downloads\\Unity Support For TruSim\\Unity.RenderPipelines.Universal.Config.Runtime.csproj": {
+              "projectPath": "C:\\Users\\lucsb\\Downloads\\Unity Support For TruSim\\Unity.RenderPipelines.Universal.Config.Runtime.csproj"
+            },
+            "C:\\Users\\lucsb\\Downloads\\Unity Support For TruSim\\Unity.VSAttribution.Editor.csproj": {
+              "projectPath": "C:\\Users\\lucsb\\Downloads\\Unity Support For TruSim\\Unity.VSAttribution.Editor.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
